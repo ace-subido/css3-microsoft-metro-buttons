@@ -1,10 +1,8 @@
 /*!
- * CSS3 Google Buttons
- *
- * Heavily inspired by css3-github-buttons, Twitter Bootstrap, and
- * of course, Google. I don't claim ownership over any of this.
- *
- * Constructed by Tim O'Donnell (http://github.com/todc)
+ * CSS3 Microsoft Metro Buttons
+ * Inspired by Tim O'Donnell's CSS3 Google Buttons, Twitter Bootstrap, and Microsoft. Icons from glyphicons.com and Syncfusion's Metro Studio.
+ * I do not claim ownership on the origin of design and icons.
+ * Built by Ace Subido (http://github.com/ace-subido)
  */
 article,
 aside,
@@ -82,6 +80,7 @@ input[type="submit"] {
   -webkit-appearance: button;
   -moz-appearance: none; 
 }
+/* overrides button presets for mozilla clients*/
 @-moz-document url-prefix() {
 	button,
 	input[type="button"],
@@ -612,20 +611,7 @@ textarea {
   margin-top: 9px;
   margin-bottom: 10px;
   padding: 0;
-  cursor: default;
-  /*    height: 1px;
-    margin: 5px 1px;
-    overflow: hidden;
-    background-color: #e5e5e5;
-    border-bottom: 1px solid white;
-
-    // IE7 needs a set width since we gave a height. Restricting just
-    // to IE7 to keep the 1px left/right space in other browsers.
-    // It is unclear where IE is getting the extra space that we need
-    // to negative-margin away, but so it goes.
-    *width: 100%;
-    *margin: -5px 0 5px;*/
-
+  cursor: default; 
 }
 .m-dropdown-menu a {
   position: relative;
@@ -785,7 +771,7 @@ textarea {
 	opacity: .8;
 }
 
-/* ..................................................................... Red */
+/*  Red */
 .m-btn.red {
   color: white;  
   background-color: #d84a38;
@@ -814,7 +800,7 @@ textarea {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#c53727', GradientType=0); 
 }
-/* .................................................................... Blue */
+/*  Blue */
 .m-btn.blue {  color: white;  
   background-color: #4d90fe;
   background-image: -moz-linear-gradient(top, #4d90fe, #4787ed);
@@ -843,7 +829,7 @@ textarea {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d90fe', endColorstr='#0072bb', GradientType=0);
 }
-/* ................................................................... Green */
+/*  Green */
 .m-btn.green {
   color: white; 
   background-color: #35aa47;
@@ -873,7 +859,7 @@ textarea {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35aa47', endColorstr='#1d943b', GradientType=0);
 }
-/* ................................................................... Purple */
+/*  Purple */
 .m-btn.purple {
   color: white; 
   background-color: #852b99;
@@ -902,7 +888,7 @@ textarea {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#852b99', endColorstr='#6d1b81', GradientType=0);
 }
-/* .............................................................. Minibutton */
+/*  Mini-button */
 .sm {
   font-size: 11px;
 }
@@ -918,7 +904,7 @@ textarea {
 	line-height: 38px; 	
 	padding: 20px 26px;
 }
-/* ................................................................ Disabled */
+/*  Disabled */
 .m-btn.disabled, .m-btn[disabled] {
   color: #b1b1b1;  
   background-color: #f5f5f5;
@@ -935,7 +921,7 @@ textarea {
   -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
 }
-/* .................................................................... Misc */
+/*  Misc */
 .m-btn.icn-only {
   min-width: 14px;
 }
@@ -982,7 +968,7 @@ textarea {
 .m-btn-group .m-btn:first-child {
   margin-left: 0;
 }
-/* -------------------------------------------------------- BUTTON CONTAINER */
+/* BUTTON CONTAINER */
 /* For mixing buttons and button groups, e.g., in a navigation bar */
 .m-btn-strip .m-btn, .m-btn-strip .m-btn-group {
   vertical-align: top;

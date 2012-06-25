@@ -23,4 +23,4 @@ Inspired by Tim O'Donnell's
           <a href="http://github.com/todc/css3-google-buttons">CSS3 Google Buttons</a>, 
           <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>, 
           and Microsoft. Icons from <a href="http://glyphicons.com/">glyphicons.com</a> and Syncfusion's 
-          <a href="http://www.syncfusion.com/downloads/metrostudio?utm_source=SiteVisitors">Metro Studio</a>.
+          <a href="http://www.syncfusion.com/downloads/metrostudio?utm_source=SiteVisitors">Metro Studio</a>. I do not claim ownership on the origin of design and icons.
