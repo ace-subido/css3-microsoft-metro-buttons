@@ -16,7 +16,7 @@ m-dropdown.js<br>
 m-radio.js<br><br>
 <hr>
 <h1>Demo and Documentation</h1>
- http://ace-subido.com/css3-microsoft-metro-buttons has a live demo and the library documentation
+ http://ace-subido.github.com/css3-microsoft-metro-buttons has a live demo and the library documentation
 <hr>
 <h1>Thanks to</h1>
 Inspired by Tim O'Donnell's 
