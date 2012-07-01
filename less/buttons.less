@@ -1,0 +1,27 @@
+// button core
+.m-btn {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  margin: 0;
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  border: none; 
+  .gradient-background-mixin(@grayColor, @darkGrayColor);
+  .background-clip(padding);
+  /* IE hacks */
+
+  zoom: 1;
+  z-index: 1;
+  *display: inline;
+  font-family: @defaultFontFamily;
+  font-size: @defaultFontSize;
+  line-height: @defaultLineHeight;
+  color: @kindofblackColor;
+  min-width: @btnMinWidth; 
+  text-align: center;  
+  text-decoration: none;
+  white-space: nowrap;
+}
+
