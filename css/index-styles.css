@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------------------------------------------------------- RESET */
+
+    html, body, div, form, p,
+    code, pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: Segoe UI, Helvetica, Arial, sans-serif; }
+
+    /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
+
+    body { font: 15px Segoe UI, Helvetica, Arial, sans-serif; color: #444444; background: #efefef; }
+
+    a { color: #08c; text-decoration: none; }
+    a:hover, a:focus, a:active { text-decoration: underline; }
+	
+	h1,
+	h2,
+	h3{
+		font-family: Segoe UI Light, Helvetica, Arial, sans-serif;
+		
+	}
+    h1 { margin: 0 0 0.3em; font-size: 40px;}
+    h2 { margin: 0 0 0.75em; font-size: 30px; color: #980905;}
+    h3 { margin: 0 0 0.333em; font-size: 21px; }
+    p { margin: 0 0 1.333em; line-height: 22px; }
+    em { font-style: italic; }
+    table { border-collapse: separate; border-spacing: 0; margin: 0; vertical-align: middle; }
+    th { margin: 0 0 0.333em; font-size: 18px; font-weight: normal; }
+    th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
+    pre, code { font-family: monospace, sans-serif; font-size: 1em; color:#080; }
+	hr { border: 0; border-top: 1px solid #eee; margin-top: 25px; margin-bottom: 25px;}
+    /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
+
+    .container { position:relative; overflow:hidden; width: 1024px; 
+				margin: auto; background: #fff;
+				-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+			  	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+			  	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  	}
+    .container pre,
+    .container .prettyprint { padding: 0; border: 0; margin: 0 0 20px; font-size: 13px; background: #fff; }	
+   	
+    .header {  width: 100%; margin: auto; padding-top: 20px; background: url("../img/starrynight.png"); background-color: black; }
+	.titleheader { width: 960px;  margin: auto; padding-bottom: 20px; padding-top: 90px;}
+	.titleheader h1, .titleheader h3{		
+		 display: inline;
+		 background-color:black; 
+		 color: white;
+		 opacity: .8;
+		 filter: alpha(opacity=80);
+		 
+	}	
+	.titleheader a{
+		color:	#aaaaaa;
+	}
+	.titleheader a:hover{
+		color:	white;
+	}
+	.overview td {
+		width: 240px;
+		vertical-align: top;
+	}	
+	
+    .section { margin: 20px 80px 20px; }
+
+    .example { padding: 20px; border-left: 5px solid #ddd; margin: 10px -25px 20px; word-wrap: break-word; }
+
+    .footer { margin: 20px 0 20px; font-size: 14px; color: #666; text-align: right; }
+    .footer a { color: #08c; }
