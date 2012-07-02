@@ -26,7 +26,19 @@
 }
 
 .m-btn:hover,
-.m-btn:focus {
+.m-btn:focus,
+.m-btn:active,
+.m-btn.active {
 	.gradient-background-mixin(@almostwhiteColor, @nearwhiteColor);
+	outline: none;
 }
+.m-btn:active, .m-btn.active {
+	.box-shadow(~"inset 0 1px 5px rgba(0, 0, 0, 0.1)");
+}
+/* overrides extra padding on button elements in Firefox */
+.m-btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
 
