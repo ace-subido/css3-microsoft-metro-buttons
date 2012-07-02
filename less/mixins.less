@@ -15,7 +15,7 @@
 	border: none;	
 }
 
-.gradient-background-mixin (@firstcolor, @secondColor) {
+.gradient-background-mixin(@firstcolor, @secondColor) {
 	#gradientstyles > .vertical(@firstcolor, @secondColor);	
 }
 
@@ -40,4 +40,11 @@
   -webkit-background-clip: @clipstyle;
      -moz-background-clip: @clipstyle;
           background-clip: @clipstyle;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
 }
