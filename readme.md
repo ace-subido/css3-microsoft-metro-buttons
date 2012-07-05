@@ -3,12 +3,19 @@ Inspired by Microsoft's Metro Design Language, I was in need of a metro-styled C
 
 My goal is to help developers out there shave off some wasted time building that metro-like stylesheet by providing them a library, a starter kit, a base on which they can build upon.
 <hr>
-<h1>Got a bug to report or a feature request?</h1>
-https://github.com/ace-subido/css3-microsoft-metro-buttons/issues is the perfect place for that.
-<hr>
-<h1>Demo and Documentation</h1>
- http://ace-subido.github.com/css3-microsoft-metro-buttons has a live demo and the library documentation
+<h1>Usage</h1>
+<h3>Requirements</h3>
+jQuery. That's all.
+<h3>Demo and Documentation</h3>
+ http://ace-subido.github.com/css3-microsoft-metro-buttons has a live demo and the library documentation.
  <hr>
+ <h1>Developers</h1>
+<h3>LESS</h3>
+LESS makes us write CSS much more like functional programming and it trains us to solve problems that way. I use wearekiss's  <a href="wearekiss.com/simpless">SIMPLESS</a>. To know more about LESS visit http://www.lesscss.org. 
+<h3>Got a bug to report or a feature request?</h3>
+https://github.com/ace-subido/css3-microsoft-metro-buttons/issues is the perfect place for that.
+
+<hr>
 <h1>Author</h1>
 My name is <a href="http://acesubido.com">Ace Subido</a>, I'm a .NET developer from the Philippines.
 <hr>
