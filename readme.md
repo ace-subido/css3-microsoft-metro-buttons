@@ -11,7 +11,7 @@ jQuery. That's all.
  <hr>
  <h1>Developers</h1>
 <h3>LESS</h3>
-LESS makes us write CSS much more like functional programming and it trains us to solve problems that way. I use wearekiss's  <a href="http://www.wearekiss.com/simpless">SIMPLESS</a>. To know more about LESS visit http://www.lesscss.org. 
+LESS makes us write CSS much more like functional programming and it trains us to solve problems that way. I use wearekiss's  <a href="http://www.wearekiss.com/simpless">SIMPLESS</a>. To know more about LESS visit http://www.lesscss.org. To access the LESS files, download the "less-branch" branch.
 <h3>Got a bug to report or a feature request?</h3>
 https://github.com/ace-subido/css3-microsoft-metro-buttons/issues is the perfect place for that.
 
