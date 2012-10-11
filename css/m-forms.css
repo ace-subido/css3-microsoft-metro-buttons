@@ -285,13 +285,13 @@ textarea.m-wrap,
 
 .m-input-prepend .add-on > [class^="icon-"]
 {
-	margin-top: 2px;
+	margin-top: 5px;
 	margin-left: 3px;
 }
 
 .m-input-append .add-on > [class^="icon-"]
 {
-	margin-top: 2px;
+	margin-top: 5px;
 	margin-left: 0px;
 }
 
