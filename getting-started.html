@@ -1,0 +1,296 @@
+﻿<!DOCTYPE HTML> 
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Microsoft Modern Buttons - Getting Started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="CSS3 Microsoft Modern Buttons - Getting Started" />
+    <meta property="og:description" content="Using CSS3 to create Microsoft-style UI elements" />
+    <meta property="og:image" content="../img/starrynight.png" />
+    <meta name="description" content="Using CSS3 to create Microsoft-style UI elements">    
+	<meta name="keywords" content="CSS3, Microsoft, Metro, Modern, Buttons">    
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/m-styles.min.css" rel="stylesheet"> 
+    <link href="./js/google-code-prettify/prettify.css" rel="stylesheet">
+  
+    <link rel="shortcut icon" href=".css/ico/favicon.ico">  
+
+    <script type="text/javascript">		  
+	var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32915822-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();	
+	</script>
+    
+  </head>
+<body> 	
+ 	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>       
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>             
+              <li class="active">
+                <a href="./getting-started.html">Getting started</a>
+              </li>           
+              <li class="">
+                <a href="./buttons.html">Buttons</a>
+              </li>          
+              <li class="">
+                <a href="./forms.html">Forms</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="container">
+	<div class="row">
+   		<div class="span12">
+    		<section>      	
+    			<div class="page-header"><h2>Getting started</h2></div>    
+                <h3>1. Download</h3>
+                <p>
+                    Download the zip file. You'll get both the compiled and minified versions along with the original files.                    
+                </p>  
+                <div class="spotlight-action">
+                <p> 
+                    <a class="m-btn big blue" 
+                         href="http://ace-subido.github.com/css3-microsoft-metro-buttons/assets/css3-microsoft-metro-buttons.zip">
+                            Download Modern Buttons <i class="m-icon-big-swapdown m-icon-white"></i>
+                    </a>        
+                </p>              
+                </div>
+                <p>
+                    After downloading the zip file, extract it to a place in your application.
+                    The zip file follows a file structure and it contains the files for the library. They're 
+                    bundled together under three folders. You'll see the files structured like this:
+                </p>
+
+<pre class="prettyprint">
+  css3-microsoft-modern-buttons/
+  ├── css/
+  │   ├── m-buttons.css
+  │   ├── m-buttons.min.css
+  │   ├── m-forms.css
+  │   ├── m-forms.min.css
+  │   ├── m-icons.css
+  │   ├── m-icons.min.css
+  │   ├── m-styles.min.css
+  ├── js/
+  │   ├── m-dropdown.js
+  │   ├── m-dropdown.min.js
+  │   ├── m-radio.js
+  │   ├── m-radio.min.js
+  ├── img/
+  │   ├── glyphicons-halflings.png
+  │   ├── glyphicons-halflings-white.png
+  │   ├── syncfusion-icons-white.png
+  │   ├── syncfusion-icons.png
+  └── readme.md
+</pre>
+            <p>
+                These are the contents of this library. 
+                The compiled and minified CSS and JS (.min.*) files are included, and the original files (.*) are within the zip file. 
+                Do note that all the Javascript files require jQuery included in your application.
+            </p>             
+            </section>   
+  
+    		<section>
+        		<h3>2. Contents</h3>
+                <p>
+                    Now that we've gone over the downloaded zip file and the extracted files. I'm going to give a brief overview of the files:
+                </p>
+                <ul>
+                    <li>
+                        <strong>m-dropdown.js / m-dropdown.min.js</strong> - 
+                        This is the Dropdown Button Javascript component (see Button docs for more details on its usage).
+                    </li>
+                    <li>
+                        <strong>m-radio.js / m-radio.min.js</strong> - 
+                        This is the Radio Behavior Javascript component (see Button docs for more details on its usage).
+                    </li>
+                    <li>
+                        <strong>m-buttons.css / m-buttons.min.css</strong> - 
+                        These files contain all the necessary CSS markups for creating modern-styled buttons. A few buttons in this file
+                        require some of the javascript components, specifically <code>m-dropdown.js/m-dropdown.min.js</code> and
+                        <code>m-radio.js/m-radio.min.js</code> to create radio-style button groups and buttons that trigger dropdown menus.
+                        Do note that jQuery is required for these Javascript components to run.
+                    </li>
+                    <li>
+                        <strong>m-forms.css / m-forms.min.css</strong> - 
+                        This file contains all the necessary CSS markups for creating modern-styled form elements and form layouts.
+                    </li>
+                    <li>
+                        <strong>m-buttons.css / m-buttons.min.css</strong> - 
+                        This file contains all the necessary CSS markups for creating icons from <strong>Glyphicons</strong> and the swap-arrows from <strong>Syncfusion</strong>.
+                        The image sprite for the icons are found under the <code>img</code> folder.
+                    </li>
+                    <li>
+                        <strong>m-styles.min.css</strong> - 
+                        This file contains all the CSS markups from <code>m-icons.css</code>, <code>m-forms.css</code>, and <code>m-buttons.css</code>.                        
+                    </li>
+                </ul>               
+               
+            </section>
+            <section>
+                <h3>3. Usage</h3>
+                <p>
+                    Now that we've already tackled the files and its contents, it's time to drop it in our web-applications for use.
+                    To do that here are two scenarios on how we can use these files:
+                </p>
+                <hr />            
+                <h4>Using it on its own</h4>
+                <p>
+                  To use both the button and form styles in this library, just drop in the <code>m-styles.min.css</code>. 
+                  Take in for example a usual HTML template for a view engine:
+                </p>
+                <pre class="prettyprint ">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World! - Home&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello world!&lt;/h1&gt;
+    &lt;script src="js/latestjquery.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                <p>
+                    Just drop in the <code>m-styles.min.css</code> file so that it can create
+                    modern-styled buttons and forms:
+                </p>
+<pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World! - Home&lt;/title&gt;
+    &lt;link href="css/m-styles.min.css" rel="stylesheet"&gt; 
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello world!&lt;/h1&gt;
+    &lt;script src="js/latestjquery.js"&gt;&lt;/script&gt;
+    &lt;script src="js/m-dropdown.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/m-radio.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                <p>
+                    Now you're set! :) With these files included we can now create modern-styled buttons and forms.
+                </p>
+                <hr />
+                <h4>Using it with Twitter Bootstrap</h4>
+                <p>
+                   This library can be used safely with <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>. Just so you know,
+                   this documentation site is using the full Twitter Bootstrap CSS file set with the CSS3 Microsoft Modern Buttons working beside it. 
+                   So let's go over on how to do that with our previous HTML template example above:
+                </p>  
+                <pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World! - Home&lt;/title&gt;
+    &lt;link href="css/m-styles.min.css" rel="stylesheet"&gt; 
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello world!&lt;/h1&gt;
+    &lt;script src="js/latestjquery.js"&gt;&lt;/script&gt;
+    &lt;script src="js/m-dropdown.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/m-radio.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                <p>
+                    Now add the bootstrap files to the HTML template:
+                </p>
+<pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World! - Home&lt;/title&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt; 
+    &lt;link href="css/m-styles.min.css" rel="stylesheet"&gt; 
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello world!&lt;/h1&gt;
+    &lt;script src="js/latestjquery.js"&gt;&lt;/script&gt;
+    &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/m-radio.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>          
+                <p>
+                    A single note here:
+                    <ul>
+                        <li>
+                            <strong>What happened to <code>m-dropdown.min.js?</code></strong> - 
+                            CSS3 Microsoft Modern Buttons' Dropdown Button Javascript component is 
+                            also using Twitter Bootstraps' Dropdown Button Javascript component. 
+                            It's compatible as of Twitter Bootstrap 2.0.4 to 2.1.1, we can use the 
+                            Dropdown Button Javascript inside <code>bootstrap.min.js</code> instead 
+                            of rolling out ours.
+                        </li>
+                    </ul>
+                </p> 
+    		</section>   
+            <section>
+                <div class="page-header"><h2>"Okay, I've done this, now what?"</h2></div>    
+                <p>
+                    Head over to the documentation section of this site for more information on how to use it, examples of its usage
+                    and some code snippets. Drop in to these parts of this site and enjoy building stuff that makes your users happy:
+
+                </p>
+                <div class="spotlight-action">
+                <p> 
+                    <a class="m-btn big blue" 
+                        href="./buttons.html">
+                            Visit Modern 'Buttons' Documents <i class="m-icon-big-swapright m-icon-white"></i>
+                    </a>  
+                     <a class="m-btn big green" 
+                        href="./forms.html">
+                            Visit Modern 'Forms' Documents <i class="m-icon-big-swapright m-icon-white"></i>
+                    </a>         
+                </p>              
+                </div>
+            </section>
+    		
+    	</div>    
+	</div>
+</div>
+
+<hr class="soften"/>
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>
+                (2012) <a href="http://github.com/ace-subido/css3-microsoft-metro-buttons">CSS3 Microsoft-Modern Buttons</a> by 
+                <a href="http://acesubido.com">Ace Subido</a>.   
+            </p>     
+            <p>     
+                Code and documentation are licensed under 
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> and maintained at Github.</p>
+            </p>     
+        </div>
+    </footer>
+<script src="./js/jquery-1.8.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>   
+<script src="./js/google-code-prettify/prettify.js"></script>
+</body>
+</html>

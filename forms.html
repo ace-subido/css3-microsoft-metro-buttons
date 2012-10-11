@@ -1,0 +1,349 @@
+﻿<!DOCTYPE HTML> 
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Microsoft Modern Buttons - Form Elements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="CSS3 Microsoft Modern Buttons - Form Elements" />
+    <meta property="og:description" content="Using CSS3 to create Microsoft-style UI elements" />
+    <meta property="og:image" content="../img/starrynight.png" />
+    <meta name="description" content="Using CSS3 to create Microsoft-style UI elements">    
+	<meta name="keywords" content="CSS3, Microsoft, Metro, Modern, Buttons, Forms">    
+    
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/m-styles.min.css" rel="stylesheet"> 
+    <link href="./js/google-code-prettify/prettify.css" rel="stylesheet">
+  
+    <link rel="shortcut icon" href=".css/ico/favicon.ico">  
+
+    <script type="text/javascript">		  
+	var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32915822-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();	
+	</script>
+   
+  </head>
+<body> 	
+ 	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>       
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Getting started</a>
+              </li>
+              <li class="">
+                <a href="./buttons.html">Buttons</a>
+              </li>
+              <li class="active">
+                <a href="./forms.html">Forms</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="container">
+	<div class="row">
+   		<div class="span12">
+    		<section>      	
+    			<div class="page-header"><h2>Going beyond styled buttons - Form Elements</h2></div>
+    			<p>
+                  To create a metro-styled text box, just add <code>class="m-wrap"</code> to
+                  any <code>&lt;input></code>, <code>&lt;select></code>, or 
+                  <code>&lt;textarea></code> html element. Viola! You now have a basic modern-styled element.
+                </p>
+                <h3>Textboxes and Textareas</h3>
+             
+                
+                    <div class="example">                       
+                        <textarea class="m-wrap" placeholder="Styled"></textarea>
+                        <input type="text" class="m-wrap" placeholder="Styled"/>                 
+                    </div>            
+                        <pre class="code prettyprint"><code>&lt;textarea class="m-wrap" placeholder="Styled">&lt;/textarea>
+&lt;input type="text" class="m-wrap" placeholder="Styled" /></code></pre>         
+            </section>   
+  
+    		<section>
+        		<h3>Checkboxes/Radio Buttons</h3>                
+                <div class="example">                    
+                    <label class="m-checkbox m-wrap">
+                    	<input type="checkbox" class="m-wrap" value="">
+                        First Choice
+                   	</label>
+                    <label class="m-radio m-wrap">
+                      	<input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                     	First Option	
+                    </label>
+                    <label class="m-radio m-wrap">
+                      	<input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios2" value="option2">
+                      	Second Option
+                    </label>
+                </div>
+                <pre class="prettyprint"><code>&lt;label class="m-checkbox m-wrap">
+    &lt;input type="checkbox" class="m-wrap" value="">
+    First Choice
+&lt;/label>
+&lt;label class="m-radio m-wrap">
+    &lt;input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    First Option	
+&lt;/label>
+&lt;label class="m-radio m-wrap">
+    &lt;input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios2" value="option2">
+    Second Option
+&lt;/label></code></pre>                
+    		</section>
+    
+            <section>    	
+                <h3>Inline Radio Buttons/Checkboxes</h3>
+                <p>
+                	Add the <code>.inline</code> class to the labels of a checkbox or radio group for them to line up in a single line. 
+                </p>
+        		<div class="example">                    
+                    <label class="m-radio inline m-wrap">
+                    	<input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios1" value="option1">
+                        First Choice
+                   	</label>
+                    <label class="m-radio inline m-wrap">
+                      	<input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                     	Second Choice	
+                    </label>
+                    <label class="m-radio inline m-wrap">
+                      	<input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios3" value="option3">
+                      	Third Choice
+                    </label>
+                </div>
+                <pre class="prettyprint"><code>&lt;label class="m-radio inline">
+    &lt;input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios1" value="option1">
+    First Choice
+&lt;/label>
+&lt;label class="m-radio inline">
+    &lt;input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+    Second Choice	
+&lt;/label>
+&lt;label class="m-radio inline">
+    &lt;input type="radio" class="m-wrap" name="optionsRadios" id="optionsRadios3" value="option3">
+    Third Choice
+&lt;/label></code></pre>               		
+    		</section>
+
+            <section>
+                <h3>Dropdown Lists/List Views</h3>   
+                <div class="example">
+                	<select class="m-wrap">
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                    <br/>
+                    <select multiple="multiple" class="m-wrap">
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                </div>  
+                    <pre class="prettyprint"><code>&lt;select class="m-wrap">
+  &lt;option>1&lt;/option>
+  &lt;option>2&lt;/option>4
+  &lt;option>3&lt;/option>
+  &lt;option>4&lt;/option>
+  &lt;option>5&lt;/option>
+&lt;/select>
+&lt;br/>
+&lt;select multiple="multiple" class="m-wrap">
+  &lt;option>1&lt;/option>
+  &lt;option>2&lt;/option>
+  &lt;option>3&lt;/option>
+  &lt;option>4&lt;/option>
+  &lt;option>5&lt;/option>
+&lt;/select></code></pre>                          
+              
+    		</section>
+            <section>
+                <h3>Filepicker</h3>   
+                <div class="example">
+                	<input type="file" class="m-wrap">
+                </div>  
+                    <pre class="prettyprint"><code>&lt;input type="file" class="m-wrap"></code></pre>                          
+              
+    		</section>
+        
+    		<section>
+                <div class="page-header"><h2>Form Elements Extensions</h2></div>
+		        <h3>Disabled Elements</h3>
+        		<p>
+		        	To depict disabled elements, it needs to look like it's unusable.
+	        		Add the <code>disabled</code> attribute in the element to make it look like its disabled. Place the <code>readonly</code>
+                    to make it uneditable. Lastly, use the <code>m-uneditable-input</code> with a <code>span</code> element
+                    if you prefer declaring the readonly style inside the class attribute of an element.			        
+		        </p>    
+		        <div class="example">                	                   
+                    <textarea class="m-wrap" placeholder="Disabled" disabled></textarea>
+                    <input type="text" class="m-wrap" disabled placeholder="Disabled"/>        
+                    <br>
+                    <textarea class="m-wrap" placeholder="" readonly>Readonly</textarea>
+                    <input type="text" class="m-wrap" readonly placeholder="" value="Readonly"/>         
+                    <br>                               
+                    <span class="m-wrap m-uneditable-input">Uneditable</span>     
+        	    </div>
+        		    <pre class="prettyprint"><code>&lt;textarea class="m-wrap" placeholder="Disabled" disabled>&lt;/textarea>
+&lt;input type="text" class="m-wrap" disabled placeholder="Disabled"/>        
+&lt;br/>
+&lt;textarea class="m-wrap" placeholder="" readonly>Readonly&lt;/textarea>
+&lt;input type="text" class="m-wrap" readonly placeholder="" value="Readonly"/>         
+&lt;br/>                               
+&lt;span class="m-wrap m-uneditable-input">Uneditable</span></code></pre>
+			        
+			</section>  
+            <section>
+                <h3>Appended Controls</h3>
+                <p>
+                	You can also place text or buttons attached before or after any element. 
+                    To place stuff before an element, wrap them around a <code>span</code> container
+                    with the <code>add-on</code> class. To set them before an element, wrap both the control and the <code>add-on</code> container
+                    with a <code>m-input-prepend</code> class, to set the text after a element you can use <code>m-input-append</code>.     
+                    Do note that when using <code>m-input-prepend</code> you need to put the <code>add-on</code> container before the element, with 
+                    <code>m-input-append</code> you need to put it after the control.
+                </p>
+				<p>
+                	<strong>Note:</strong> the <code>textarea</code>, <code>select</code>, <code>input type="file"</code>,
+                    <code>input type="checkbox"</code>, and <code>input type="radio"</code> elements are not supported.
+                </p>
+                <div class="example">
+                	<div class="m-input-prepend">
+                      <span class="add-on">@</span>
+                      <input class="m-wrap" size="16" type="text" placeholder="Twitter Username">
+                    </div>                    
+                    <br/>
+                    <div class="m-input-append">                      
+                      <input class="m-wrap" size="16" type="text" placeholder="">
+                      <span class="add-on"><i class="icon-font"></i></span>
+                    </div>                                     
+                </div>
+                <pre class="prettyprint"><code>&lt;div class="m-input-prepend">
+  &lt;span class="add-on">@&lt;/span>
+  &lt;input class="m-wrap" size="16" type="text" placeholder="Twitter Username">
+&lt;/div>                    
+&lt;br/>
+&lt;div class="m-input-append">                      
+  &lt;input class="m-wrap" size="16" type="text" placeholder="">
+  &lt;span class="add-on">&lt;i class="icon-font">&lt;/i>&lt;/span>
+&lt;/div></code></pre> 
+				<p>
+                	You can combine both the <code>m-input-prepend</code> class and the <code>m-input-append</code> class to place stuff before and after 
+                    an element.                   
+                </p>   
+                <div class="example">
+                	<div class="m-input-prepend m-input-append">
+                      <span class="add-on">@</span>
+                      <input class="m-wrap" size="16" type="text" placeholder="Twitter Username">
+                      <span class="add-on">Username</span>
+                    </div>  
+                                
+                </div>
+                <pre class="prettyprint"><code>&lt;div class="m-input-prepend m-input-append">
+  &lt;span class="add-on">@&lt;/span>
+  &lt;input class="m-wrap" size="16" type="text" placeholder="Twitter Username">
+  &lt;span class="add-on">Username</span>
+&lt;/div></code></pre>                 
+				<p>
+                	You can also place buttons instead of text.
+                </p>
+                <div class="example">
+                	<div class="m-input-append">                      
+                      	<input class="m-wrap" size="16" type="text" placeholder="Twitter Username">
+                      	<button href="#" class="m-btn">Search</button>
+                        <button href="#" class="m-btn">Back</button>
+                    </div>   
+                    <br/>  
+                    <div class="m-input-prepend">                
+                    	<button href="#" class="m-btn blue">Login</button>      
+                      	<input class="m-wrap" size="16" type="password" placeholder="Your Password">                      
+                    </div>              
+                </div>
+                <pre class="prettyprint"><code>&lt;div class="m-input-append">                      
+    &lt;input class="m-wrap" size="16" type="text" placeholder="Twitter Username">
+    &lt;button href="#" class="m-btn">Search&lt;/button>
+    &lt;button href="#" class="m-btn">Back&lt;/button>
+&lt;/div>   
+&lt;br/>
+&lt;div class="m-input-prepend">                
+    &lt;button href="#" class="m-btn blue">Login&lt;/button>      
+    &lt;input class="m-wrap" size="16" type="password" placeholder="Your Password">
+&lt;/div>                      
+</code></pre> 
+            </section>       
+
+            <section>
+                <h3>Control sizes</h3>
+                <p>
+                  Use the <code>m-ctrl-small</code>, <code>m-ctrl-medium</code>, and <code>m-ctrl-large</code> to control the length of your textbox, 
+                  textarea and select elements. There's the <code>m-ctrl-huge</code> class to create jumbo textboxes (textboxes with this 
+                  size does not support the append and prepend classes). However, do note that this class is only supported with the 
+                  <code>input type="text"</code> element.
+                </p>
+        
+       			<div class="example">
+                	<input type="text" class="m-wrap m-ctrl-small" placeholder=".m-ctrl-small"/> 
+                    <br/>     
+                    <input type="text" class="m-wrap m-ctrl-medium" placeholder=".m-ctrl-medium"/>         
+                    <br/>
+                    <input type="text" class="m-wrap m-ctrl-large" placeholder=".m-ctrl-large"/>     
+                    <br/>   
+                    <input type="text" class="m-wrap m-ctrl-huge" placeholder=".m-ctrl-huge"/>   
+                </div>
+					<pre class="prettyprint"><code>&lt;input type="text" class="m-wrap m-ctrl-small" placeholder=".m-ctrl-small"/> 
+&lt;br/>     
+&lt;input type="text" class="m-wrap m-ctrl-medium" placeholder=".m-ctrl-medium"/>         
+&lt;br/>
+&lt;input type="text" class="m-wrap m-ctrl-large" placeholder=".m-ctrl-large"/>     
+&lt;br/>   
+&lt;input type="text" class="m-wrap m-ctrl-huge" placeholder=".m-ctrl-huge"/></code></pre>
+        			
+    		</section>
+    
+    		
+    	</div>    
+	</div>
+</div>
+
+<hr class="soften"/>    
+     <footer class="footer">
+      <div class="container">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>
+                (2012) <a href="http://github.com/ace-subido/css3-microsoft-metro-buttons">CSS3 Microsoft-Modern Buttons</a> by 
+                <a href="http://acesubido.com">Ace Subido</a>.   
+            </p>     
+            <p>     
+                Code and documentation are licensed under 
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> and maintained at Github.</p>
+            </p>     
+        </div>
+    </footer>
+<script src="./js/jquery-1.8.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>   
+<script src="./js/google-code-prettify/prettify.js"></script>
+<script src="./js/m-radio.min.js"></script>
+</body>
+</html>

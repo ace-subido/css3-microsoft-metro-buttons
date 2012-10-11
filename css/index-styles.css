@@ -1,7 +1,12 @@
 /* ------------------------------------------------------------------------------------------------------------- RESET */
 
-    html, body, div, form, p,
-    code, pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: Segoe UI, Helvetica, Arial, sans-serif; }
+    html, 
+	body, 
+	div, 
+	form, 
+	p,
+    code, 
+	pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: Segoe UI, Helvetica, Arial, sans-serif; }
 
     /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
 

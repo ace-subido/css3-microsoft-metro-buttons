@@ -1,19 +1,25 @@
-<!DOCTYPE HTML> 
-<html lang="en"> 
-<head> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <meta property="og:title" content="CSS3 Microsoft-Metro Buttons" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Microsoft Modern Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="CSS3 Microsoft Modern Buttons - Getting Started" />
     <meta property="og:description" content="Using CSS3 to create Microsoft-style UI elements" />
     <meta property="og:image" content="../img/starrynight.png" />
     <meta name="description" content="Using CSS3 to create Microsoft-style UI elements">    
-    <title>CSS3 Microsoft-Metro Buttons - Demo</title>
-    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
-    <link rel="stylesheet" href="./css/msft-metro-buttons.css" type="text/css"  media="screen" />
-    <link rel="stylesheet" href="./css/index-styles.css" type="text/css"  media="screen" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-    <script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
+	<meta name="keywords" content="CSS3, Microsoft, Metro, Modern, Buttons">    
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link href="./css/m-styles.min.css" rel="stylesheet"> 
+    <link href="./js/google-code-prettify/prettify.css" rel="stylesheet"/>
+  
+    <link rel="shortcut icon" href=".css/ico/favicon.ico">  
+
+    <script type="text/javascript">		  
+	var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-32915822-1']);
 	  _gaq.push(['_trackPageview']);
 	
@@ -21,489 +27,137 @@
 		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
+	  })();	
 	</script>
-    <script src="./js/m-dropdown.js"></script>
-    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>  
-</head>
-<body onload="prettyPrint()"> 	
-<div class="container">   
-   <div class="header">	
-       <div class="titleheader">
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>       
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Getting started</a>
+              </li>
+              <li class="">
+                <a href="./buttons.html">Buttons</a>
+              </li>
+              <li class="">
+                <a href="./forms.html">Forms</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="header">
+	<div class="container">       
+        <div class="titleheader">
             <h1>"Once upon a starry night...</h1><br><br>
             <h1>I stayed up ALL night polishing that stylesheet for a set of metro-looking buttons..."</h1><br><br>
-            <h3><a href="https://github.com/ace-subido/css3-microsoft-metro-buttons">CSS3 Microsoft-Metro Buttons</a> helps you easily re-create those stylish buttons used by Microsoft on their websites.</h3>
-            
-        </div>
-    </div>
-	<div class="section">
-    	<hr/>
-    	<p align="center"> <a class="m-btn big blue" href="http://ace-subido.github.com/css3-microsoft-metro-buttons/assets/css3-microsoft-metro-buttons.rar">Download CSS3 Microsoft-Metro Buttons <i class="m-icon-big-swapdown m-icon-white"></i></a>
-        <a class="m-btn big purple" href="https://github.com/ace-subido/css3-microsoft-metro-buttons">See project on Github <i class="m-icon-big-swapright m-icon-white"></i></a></p>
-        <p><h3>CSS3 Microsoft-Metro Buttons (CMMB)</h3>
-        Inspired by Microsoft's Metro Design Language, I was in need of a metro-styled CSS3 button library. I wanted to make similar metro-looking buttons
-        used by Microsoft (extensively used in their Microsoft Windows Azure and Codeplex
-        websites) So I've built a very small, simple and clean CSS3 library to deal with my problem.</p>
-        
-        <p>Thus CSS3 Microsoft-Metro Buttons (CMMB) was born. Weighing in at a healthy 21KB (compressed, 4KB gzipped), it's a light-weight and easy-to-use CSS/JS library that uses CSS3 styles for rich button design.
-        The library can also work with <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>. The buttons are also cross-browser compatibile from IE8, to the latest version of Chrome, and Firefox so you don't have to 
-        spend countless minutes testing on different browsers.        
-        </p>
-        <p>
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ace-subido.github.com/css3-microsoft-metro-buttons/" data-text="CSS/JS Library for recreating Microsoft-Metro Buttons">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><br/>
-        <a name="fb_share"></a> 
-		<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
-                type="text/javascript">
-        </script>
-        </p>
-        <p><h3>License</h3>
-		You can use this library for any projects you have in mind, although it would be nice if you give credit to <a href="http://acesubido.com">me</a> and/or mention me in <a href="http://twitter.com/acesubido">twitter.</a><br/>
-        <br/>
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p></p>
-        
-         <hr/> 
-    </div>
-    <div class="section">
-   
-    	<h2>Button Classes</h2>
-        <h3>Buttons</h3>
-        <p>
-          To create a metro-styled button, just add <code>class="m-btn"</code> to
-          any <code>&lt;a></code>, <code>&lt;button></code>, or 
-          <code>&lt;input></code> html element. Viola! You now have a basic metro-styled button.
-        </p>
-
-        <div class="example">
-            <pre class="code prettyprint"><code>&lt;form>
-    &lt;a href="#" class="m-btn">Post comment&lt;/a>
-    &lt;input class="m-btn" type="submit" value="New Comment (submit)" />
-    &lt;button class="m-btn">New Comment (button)&lt;/button>
-&lt;/form></code></pre>
-            <form>
-                <a class="m-btn">New Comment (link)</a>
-                <input class="m-btn" type="submit" value="New Comment (submit)" />
-                <button class="m-btn">New Comment (button)</button>
-            </form>
-        </div>
-    </div>   
-  
-    <div class="section">
-        <h3>Colored Buttons</h3>
-        <p>
-          To get some color to your buttons, you can do this by adding the 
-          <code>blue</code>, <code>red</code>, <code>purple</code> or <code>green</code> class to your button.
-        </p>
-        <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="m-btn red">Color Red&lt;/a></code></pre>
-            <a href="#button" class="m-btn blue">Color Blue</a>
-            <a href="#button" class="m-btn red">Color Red</a>            
-            <a href="#button" class="m-btn purple">Color Purple</a>
-            <a href="#button" class="m-btn green">Color Green</a>
-        </div>
-    </div>
-    
-     <div class="section">    	
-        <h3>Striped buttons</h3>
-        <p>
-          If you prefer the buttons having "color highlights" instead of filling it up with one color, you can
-          use the <code>{color}-stripe</code> class. You'll get some stripes on the buttons like those being used at Microsoft's 
-          Windows Azure website. Just use any of the <code>blue</code>, <code>red</code>, <code>purple</code> or <code>green</code> color classes above and put <code>-stripe</code> next to it. Examples can 
-          be seen below.
-        </p>
-
-        <div class="example">
-            <pre class="code prettyprint"><code>&lt;a href="#" class="m-btn red-stripe">Red Stripe&lt;/a>
-&lt;a href="#" class="m-btn purple-stripe">Purple stripe&lt;/a></code></pre>
-             <a class="m-btn red-stripe">Red stripe</a>
-              <a class="m-btn purple-stripe">Purple Stripe</a>
-              
-        </div>
-    </div>
-    
-    
-    <div class="section">
-        <h3>Disabled Buttons</h3>
-        <p>
-          To depict a disabled button, it needs to look like it's unusable.
-          Add the <code>disabled</code> class for displaying a disabled button. Special note: This style automatically appears
-          when you use the <code>disabled</code> attribute in the element, no need to class it within the class attribute.
-          Same goes for the <code>active</code> classes.
-        </p>
-    
-        <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="m-btn disabled">Preview&lt;/a>
-&lt;a href="#" class="m-btn" disabled>Preview&lt;/a>
-&lt;a href="#" class="m-btn red disabled">Delete&lt;/a>
-&lt;a href="#" class="m-btn red" disabled>Delete&lt;/a>
-</code></pre>
-            <a href="#button" class="m-btn disabled">Preview</a>
-            <a href="#button" class="m-btn" disabled>Preview</a>
-         	<a href="#button" class="m-btn red disabled">Delete</i></a>
-            <a href="#button" class="m-btn red" disabled>Delete</i></a>
-         
-        </div>
-    </div>
-    
-    <div class="section">
-        <h3>Button sizes</h3>
-        <p>
-          You can also get the buttons in different sizes. Use the
-          <code>sm</code> class to shrink the text in buttons. To shrink the button itself
-          along with the size of the text, use the <code>mini</code> class. Lastly, there's the <code>big</code> class for 
-          those tile-like buttons.          
-        </p>
-    
-        <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="m-btn mini">Mini size&lt;/a>
-&lt;a href="#" class="m-btn sm">Default size&lt;/a>
-&lt;a href="#" class="m-btn big">Large size&lt;/a></code></pre>
-			<a href="#button" class="m-btn mini">Mini size</a>
-            <a href="#button" class="m-btn sm">Default size</a>            
-            <a href="#button" class="m-btn big">Large size</a>
-        </div>
-        
-        <p>You can also mix and match the color classes and the size classes. Here are some examples:</p>
-        <div class="example">            
-			<a href="#button" class="m-btn mini red">Delete</a>
-            <a href="#button" class="m-btn blue">Submit Entry</a>            
-            <a href="#button" class="m-btn big purple">See pricing options</a>
-        </div>
-    </div>
-    
-    <div class="section">
-        <h3>Button groups</h3>
-        <p>
-          To group together a handful of buttons, just wrap them in an element that has 
-          the <code>m-btn-group</code> class.
-        </p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="m-btn-group">
-    &lt;a href="#" class="m-btn">Left&lt;/a>
-    &lt;a href="#" class="m-btn">Center&lt;/a>
-    &lt;a href="#" class="m-btn">Right&lt;/a>
-&lt;/div></code></pre>
-        <div class="m-btn-group">
-            <a href="#button" class="m-btn">Left</a>
-            <a href="#button" class="m-btn">Center</a>
-            <a href="#button" class="m-btn">Right</a>
-        </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h3>Button strips</h3>
-        <p>
-          Creating a sequence of button groups resembling a loosely coupled toolbar can be achieved 
-          with the class <code>m-btn-strip</code>. It wraps all the button groups in a horizontal
-          manner to resemble a strip of buttons.
-        </p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="<b>m-btn-strip</b>">
-    &lt;a href="#" class="m-btn">Compose New&lt;/a>
-    
-    &lt;div class="m-btn-group">
-        &lt;a href="#" class="m-btn">Archive&lt;/a>
-        &lt;a href="#" class="m-btn">Spam&lt;/a>
-        &lt;a href="#" class="m-btn">Delete&lt;/a>
-    &lt;/div>
-                        
-    &lt;div class="m-btn-group">
-        &lt;a href="#" class="m-btn">Move to&lt;/a>
-        &lt;a href="#" class="m-btn">Labels&lt;/a>
-    &lt;/div>
-
-    &lt;a href="#" class="m-btn">More&lt;/a>
-&lt;/div></code></pre>
-            <div class="m-btn-strip">
-                <a href="#button" class="m-btn">Compose New</a>
-                
-                <div class="m-btn-group">
-                    <a href="#button" class="m-btn">Archive</a>
-                    <a href="#button" class="m-btn">Spam</a>
-                    <a href="#button" class="m-btn">Delete</a>
-                </div>
-                                    
-                <div class="m-btn-group">
-                    <a href="#button" class="m-btn">Move to</a>
-                    <a href="#button" class="m-btn">Labels</a>
-                </div>
-
-                <a href="#button" class="m-btn">More</a>
-            </div>
-        </div>
-    </div>
-
-    
-    
-    <div class="section">
-    	<h2>Icon Components</h2>
-        <h3>Icon classes</h3>
-        <p>
-        The icons that you can use for the buttons are also taken from the glyphicons image sprite used by Twitter Bootstrap.
-        <a href="http://twitter.github.com/bootstrap/base-css.html#icons">Twitter Bootstrap</a> has a great array of documents
-        for the complete list of icons in the glyphicon sprite, their respective CSS class names and how to use those icon classes.
-        </p>
-        I've also provided those "Swap Arrows" in one sprite. These are the arrows extensively being used by Microsoft.
-        Thanks to Syncfusion and their awesome Metro Studio.
-        <div class="example">
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Class</th>
-                        <th scope="col">Icon</th>                        
-                    </tr>
-                </thead>
-                <tr>
-                    <td scope="row"><code>.m-icon-swapright</code></td>
-                    <td><i class="m-icon-swapright"></i></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.m-icon-swapleft</code></td>
-                    <td><i class="m-icon-swapleft"></i></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.m-icon-swapup</code></td>
-                    <td><i class="m-icon-swapup"></i></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.m-icon-swapdown</code></td>
-                    <td><i class="m-icon-swapdown"></i></td>
-                </tr>  
-                <tr>
-                    <td scope="row"><code>.m-icon-big-swapright</code></td>
-                    <td><i class="m-icon-big-swapright"></i></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.m-icon-big-swapleft</code></td>
-                    <td><i class="m-icon-big-swapleft"></i></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.m-icon-big-swapup</code></td>
-                    <td><i class="m-icon-big-swapup"></i></td>
-                </tr>
-                <tr>
-                    <td scope="row"><code>.m-icon-big-swapdown</code></td>
-                    <td><i class="m-icon-big-swapdown"></i></td>
-                </tr>                
-            </table>
-        </div>
-        <p>You can also use the white counter-parts of the icons above by adding the <code>m-icon-white</code> class.</p>        
-    </div>
-    <div class="section">
-        <h3>Icon buttons</h3>
-        <p>
-          To create a button using an icon, add the
-          <code>icn-only</code> class. Then use the icon class inside the button, just as shown below. 
-        </p>        
-        <div class="example">
-<pre class="prettyprint"><code>
-&lt;a href="#" class="m-btn icn-only">&lt;i class="icon-share">&lt;/i>&lt;/a>
-&lt;a href="#" class="m-btn red icn-only">&lt;i class="icon-remove icon-white">&lt;/i>&lt;/a>
-&lt;a href="#" class="m-btn blue icn-only">&lt;i class="m-icon-swapright m-icon-white">&lt;/i>&lt;/a>
-</code></pre>
-
-            <a class="m-btn icn-only"><i class="icon-share"></i></a>
-            <a class="m-btn red icn-only"><i class="icon-remove icon-white"></i></a>
-            <a class="m-btn blue icn-only"><i class="m-icon-swapright m-icon-white"></i></a>
-        </div>
-        
-        <p>Grouping them together to achieve the same buttons for Gmail's paginator is quite easy.</p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;div class="m-btn-group">
-    &lt;a href="#" class="m-btn icn-only">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
-    &lt;a href="#" class="m-btn icn-only">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
-&lt;div>
-</code></pre>
-
-            <div class="m-btn-group">
-                <a class="m-btn icn-only"><i class="icon-chevron-left"></i></a>
-                <a class="m-btn icn-only"><i class="icon-chevron-right"></i></a>
-            </div>
-        </div>  
-        
-        <p>To create large icon buttons using the big swap arrows that was provided, just use the <code>bigicn-only</code> 
-        CSS class.</p>
-        
-        <div class="example">
-<pre class="prettyprint"><code>&lt;a href="#" class="m-btn bigicn-only">&lt;i class="m-icon-big-swapright">&lt;/i>&lt;/a>
-&lt;a href="#" class="m-btn bigicn-only green">&lt;i class="m-icon-big-swapright icon-white">&lt;/i>&lt;/a>
-
-</code></pre>
-
-                <a class="m-btn bigicn-only"><i class="m-icon-big-swapright"></i></a>
-       
-                <a class="m-btn bigicn-only green"><i class="m-icon-big-swapright m-icon-white"></i></a>
-           
-        </div>
-    </div>   
-    
-    <div class="section">
-        <h3>Buttons with both text and icon</h3>
-        <p>
-          So far we know how to create a button with text in it. We also have tackled how to create a button with only an icon in it.
-          This time let's get a bunch of buttons with both text and icon in it.
-        </p>
-
-        <div class="example">
-            <pre class="prettyprint">
-            	<code>
-&lt;a href="#" class="m-btn mini red">&lt;i class="icon-trash">&lt;/i> Delete Item&lt;/a>
-&lt;a href="#" class="m-btn">&lt;i class="icon-plus">&lt;/i> Add Item&lt;/a>
-&lt;a class="m-btn purple-stripe">Listen to podcast &lt;i class="icon-headphones">&lt;/i>&lt;/a>
-&lt;a href="#" class="m-btn blue">&lt;i class="icon-plus">&lt;/i> Submit Entry&lt;/a>
-&lt;a class="m-btn purple big">See pricing options &lt;i class="m-icon-big-swapright m-icon-white">&lt;/i>&lt;/a>
-            	</code>
-            </pre>          
-            <a class="m-btn mini red"><i class="icon-trash icon-white"></i> Delete</a>
-            <a class="m-btn"><i class="icon-plus"></i> Add Item</a> 
-            <a class="m-btn purple-stripe">Listen to podcast <i class="icon-headphones"></i></a>
-            <a class="m-btn blue">Submit Entry <i class="icon-share-alt icon-white"></i></a>
-            <a class="m-btn purple big">See pricing options <i class="m-icon-big-swapright m-icon-white"></i></a>
+            <h3><a href="https://github.com/ace-subido/css3-microsoft-metro-buttons">CSS3 Microsoft Modern Buttons</a> helps you easily re-create those stylish buttons used by Microsoft on their websites.</h3>            
         </div>      
-    </div>
-    
-    <div class="section">
-    	<h2>Javascript Components</h2>
-    	
-        <h3>Radio Button Groups</h3>
-        <p>
-          Sometimes your button group should act like a series of radio buttons,
-          in which selecting one button deselects the others. Add the 
-          <code>toggle-buttons</code> class to your <code>m-btn-group</code> 
-          div to accomplish this. To set the currently selected button, use the 
-          <code>active</code> class. Note: Make sure you put the <code>&lt;script src="{file path to m-radio.js}">&lt;/script></code> script call near
-          the closing <code>body</code> tag.
-        </p>
-        
-        <div class="example">
-            <pre class="prettyprint">
-            	<code>
-&lt;div class="m-btn-group toggle-buttons">
-    &lt;a href="#" class="m-btn">Tools&lt;/a>
-    &lt;a href="#" class="m-btn">Settings&lt;/a>
-    &lt;a href="#" class="m-btn active">About&lt;/a>
-    &lt;a href="#" class="m-btn">Help&lt;/a>
-    &lt;a href="#" class="m-btn">Contact&lt;/a>
-&lt;/div>
-            	</code>
-            </pre>
-            <div class="m-btn-group toggle-buttons">
-                <a class="m-btn">Tools</a>
-                <a class="m-btn">Settings</a>
-                <a class="m-btn active">About</a>
-                <a class="m-btn">Help</a>
-                <a class="m-btn">Contact</a>
-            </div>
-        </div>      
-    </div>
-    <div class="section">
-        <h3>Button dropdowns</h3>
-        <p>
-          To create buttons that spawn dropdown menus we'll use Twitter Bootstrap's javascript to make it happen. Create the 
-          dropdown menu by making a <code>ul</code> list with a <code>m-dropdown-menu</code> class in it. Afterwards, wrap the 
-          ul list with your button in a <code>m-btn-group</code> element. Place a <code>dropdown-toggle</code> class with the button and put in the <code>data-toggle</code>
-          attribute as shown by the example below. Lastly, to get that dropdown arrow shown in the example, just place a <code>caret</code>
-          class in a span element.       
-        </p>
-
-        <div class="example" style="position:relative">
-            <pre class="prettyprint prettyprinted" style="">
-            	<code>
-<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn-group"</span><span class="tag">&gt;</span><span class="pln">
-  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn dropdown-toggle"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">
-    Tools </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
-  </span><span class="tag">&lt;/a&gt;</span><span class="pln">
-  </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-dropdown-menu"</span><span class="tag">&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Settings</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Preferences</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Window Options</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Help</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-  </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
-</span><span class="tag">&lt;/div&gt;</span>
-            	</code>
-            </pre>
-
-            <div class="m-btn-container">
-              <div class="m-btn-group">
-                <a class="m-btn dropdown-toggle" data-toggle="dropdown" href="">
-                  Tools <span class="caret"></span>
-                </a>
-                <ul class="m-dropdown-menu">
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Preferences</a></li>
-                    <li><a href="#">Window Options</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-              </div>
-            </div>
-        </div>
-        
-        <p>
-        	To create buttons with the dropdown toggle seperated from the text, place the caret in another button with a <code>
-            dropdown-carettoggle</code> class in that button. To make the dropdown arrow into white, just place the <code>white</code> class with
-            the span containing the caret. 
-
-        </p>
-        
-        <div class="example" style="position:relative">
-            <pre class="prettyprint prettyprinted" style="">
-            	<code>
-<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn-group"</span><span class="tag">&gt;</span><span class="pln">
-  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn blue"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cog icon-white"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Settings</span><span class="tag">&lt;/a&gt;</span><span class="pln">
-  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn blue dropdown-carrettoggle"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">
-    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret white"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
-  </span><span class="tag">&lt;/a&gt;</span><span class="pln">
-  </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-dropdown-menu"</span><span class="tag">&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-user"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Edit Profile</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-th-list"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> View Profile</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-question-sign"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Help</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/li&gt;</span><span class="pln">
-      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-off"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Logout</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
-  </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
-</span><span class="tag">&lt;/div&gt;</span>
-            	</code>
-            </pre>
-          
-            <div class="m-btn-group">
-              <a class="m-btn blue"><i class="icon-cog icon-white"></i> Settings</a>
-              <a class="m-btn blue dropdown-carettoggle" data-toggle="dropdown" href="#">
-                <span class="caret white"></span>
-              </a>
-              <ul class="m-dropdown-menu">
-                  <li><a href="#"><i class="icon-user"></i> Edit Profile</a></li>
-                  <li><a href="#"><i class="icon-th-list"></i> View Profile</a></li>
-                  <li><a href="#"><i class="icon-question-sign"></i> Help</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#"><i class="icon-off"></i> Logout</a></li>
-              </ul>
-            </div>
-        </div>
-        
-    </div>  
-    <div class="section">
-        <h3>Acknowledgements</h3>
-        <p>
-          Inspired by Tim O'Donnell's 
-          <a href="http://github.com/todc/css3-google-buttons">CSS3 Google Buttons</a>, 
-          <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>, 
-          and Microsoft. Icons from <a href="http://glyphicons.com/">glyphicons.com</a> and Syncfusion's 
-          <a href="http://www.syncfusion.com/downloads/metrostudio?utm_source=SiteVisitors">Metro Studio</a>.
-           I do not claim ownership on the origin of design and icons as well as the Van Gogh painting on the header.
-        </p>
-        <div class="footer">
-            <hr/>
-            (2012) <a href="http://github.com/ace-subido/css3-microsoft-metro-buttons">CSS3 Microsoft-Metro Buttons</a> by 
-            <a href="http://acesubido.com">Ace Subido</a>. 
-        </div>
-    </div>
     </div>
     
 </div>
-<script src="./js/m-radio.js"></script>
-</body>
+
+<div class="docs-social">
+  <div class="container">
+    <ul class="docs-social-buttons">
+      <li>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=ace-subido&repo=css3-microsoft-metro-buttons&type=watch&count=true" 
+        allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+      </li>
+      <li>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=ace-subido&repo=css3-microsoft-metro-buttons&type=fork&count=true" 
+        allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+      </li>    
+      <li class="tweet-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ace-subido.github.com/css3-microsoft-metro-buttons/" data-text="CSS/JS Library for recreating Microsoft-Metro Buttons">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><br/>
+      </li>
+    </ul>
+  </div>
+</div>
+        	
+<div class="spotlight-action">
+    <p> 
+        <a class="m-btn big blue" 
+            href="http://ace-subido.github.com/css3-microsoft-metro-buttons/assets/css3-microsoft-metro-buttons.zip">
+                Download Modern Buttons <i class="m-icon-big-swapdown m-icon-white"></i>
+        </a>        
+    </p>
+    <p class="version">
+        Version 1.1 · <a href="https://github.com/ace-subido/css3-microsoft-metro-buttons">See Project on Github</a>
+    </p>
+</div>
+
+<div class="marketing">
+    <div class="row">
+        <div class="container">
+            <h1>Say hello to <strong>CSS3 Microsoft Modern Buttons</strong></h1>
+            <p>A light-weight and easy-to-use CSS/JS library that uses CSS3 styles for rich button design.</p>
+        </div>
+    </div>
+    <div class="row">
+	    <div class="container">
+		    <div class="span3">         
+            	<img src="./img/need.png"/>
+                <h3>Created from a need.</h3>            
+                <p>
+                    Created from a personal itch to form a simple CSS/JS library inspired from Microsoft's Modern Design principles.
+                </p>                
+            </div>   
+            <div class="span3">
+            	<img src="./img/share.png"/>
+        	    <h3>Highly encouraged for sharing.</h3>
+                <p>Free to use for any projects you have in mind, although it would be nice if you gave <a href="http://twitter.com/acesubido">credit</a>.</p>                
+            </div>          
+            <div class="span3">
+            	<img src="./img/cross.png"/>
+                <h3>Cross-browser compatible.</h3>
+                <p>Cross-browser compatibile from IE8, to the latest version of Chrome, and Firefox so you don't have to spend countless minutes on testing.
+                </p>
+            </div>     
+            <div class="span3">
+            	<img src="./img/bootstrap.png"/>
+        	    <h3>Works on top of Bootstrap.</h3>
+                <p>Carefully made to work with the Twitter Bootstrap CSS/HTML framework versions 2.0 and above.</p>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+
+<hr class="soften"/>
+   
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>
+            (2012) <a href="http://github.com/ace-subido/css3-microsoft-metro-buttons">CSS3 Microsoft-Modern Buttons</a> by 
+            <a href="http://acesubido.com">Ace Subido</a>.   
+        </p>     
+        <p>     
+            Code and documentation are licensed under 
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> and maintained at Github.</p>
+        </p>     
+      </div>
+    </footer>
+<script src="./js/jquery-1.8.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>   
+  </body>
 </html>
