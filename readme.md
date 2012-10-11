@@ -1,17 +1,21 @@
 <h1>Overview</h1>
+Formerly known as CSS3 Microsoft-Metro Buttons (CMMB)
+
 Inspired by Microsoft's Metro Design Language, I was in need of a metro-styled CSS3 button library. I wanted to make similar metro-looking buttons used by Microsoft (extensively used in their Microsoft Windows Azure website) So I've built a very small, simple and clean CSS3 library to deal with my problem.
 
+Thus CSS3 Microsoft-Metro Buttons (CMMB) was born. Weighing in at a healthy 21KB (compressed, 4KB gzipped), it's a light-weight and easy-to-use CSS/JS library that uses CSS3 styles for rich button design. The library can also work with Twitter Bootstrap. The buttons are also cross-browser compatibile from IE8, to the latest version of Chrome, and Firefox so you don't have to spend countless minutes testing on different browsers.
+
 My goal is to help developers out there shave off some wasted time building that metro-like stylesheet by providing them a library, a starter kit, a base on which they can build upon.
-<hr>
-<h1>Usage</h1>
-<h3>Requirements</h3>
-jQuery. That's all.
+
 <h3>Demo and Documentation</h3>
  http://ace-subido.github.com/css3-microsoft-metro-buttons has a live demo and the library documentation.
  <hr>
  <h1>Developers</h1>
-<h3>LESS</h3>
-LESS makes us write CSS much more like functional programming and it trains us to solve problems that way. I use wearekiss's  <a href="http://www.wearekiss.com/simpless">SIMPLESS</a>. To know more about LESS visit http://www.lesscss.org. To access the LESS files, download the "less-branch" branch.
+<h3>LESS and SASS</h3>
+LESS makes us write CSS much more like functional programming and it trains us to solve problems that way. I use wearekiss's  <a href="http://www.wearekiss.com/simpless">SIMPLESS</a>. To know more about LESS visit http://www.lesscss.org. To access the LESS and SASSfiles, download the "dsl-branch" branch. 
+
+Though as of 1.1.0, I haven't found the time to do it with LESS or SASS.
+
 <h3>Got a bug to report or a feature request?</h3>
 https://github.com/ace-subido/css3-microsoft-metro-buttons/issues is the perfect place for that.
 
