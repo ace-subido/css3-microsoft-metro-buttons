@@ -4,31 +4,6 @@
  * I do not claim ownership on the origin of design and icons.
  * Built by Ace Subido (http://github.com/ace-subido)
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-audio:not([controls]) {
-  display: none;
-}
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -36,24 +11,6 @@ a:focus {
 }
 a:hover, a:active {
   outline: 0;
-}
-sub, sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
 }
 button,
 input,
@@ -98,10 +55,6 @@ input[type="search"] {
 }
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
-}
-textarea {
-  overflow: auto;
-  vertical-align: top;
 }
 .dropdown {
   position: relative;
@@ -199,7 +152,7 @@ textarea {
 .m-dropdown-menu a [class^="icon-"] {
   position: absolute;
   left: 7px;
-  top: 9px;
+  top: 8px;
 }
 .m-dropdown-menu li > a:hover, .m-dropdown-menu .active > a, .m-dropdown-menu .active > a:hover {
   text-decoration: none;
@@ -298,8 +251,6 @@ textarea {
   padding: 0;
   border: 0;
 }
-
-
 .m-btn.red-stripe
 {
 	border-left: 3px solid #d84a38;
@@ -336,7 +287,12 @@ textarea {
 .m-btn.green:active,
 .m-btn.green.active,
 .m-btn.green.disabled,
-.m-btn.green[disabled]{
+.m-btn.green[disabled],
+.m-btn.black:active,
+.m-btn.black.active,
+.m-btn.black.disabled,
+.m-btn.black[disabled]
+{
   -webkit-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -349,8 +305,15 @@ textarea {
 .m-btn.purple.disabled,
 .m-btn.purple[disabled],
 .m-btn.green.disabled,
-.m-btn.green[disabled]{
+.m-btn.green[disabled]
+{
 	opacity: .7;
+}
+
+.m-btn.black.disabled,
+.m-btn.black[disabled]
+{
+	opacity: .5;
 }
 
 /*  Red */
@@ -536,21 +499,83 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#852b99', endColorstr='#6d1b81', GradientType=0);
 
 }
+
+
+.m-btn.black {
+  color: white; 
+  text-shadow: none;	
+  background-color: #555555;
+  background-image: -moz-linear-gradient(top, #555555, #555555);
+  background-image: -ms-linear-gradient(top, #555555, #555555);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#555555));
+  background-image: -webkit-linear-gradient(top, #555555, #555555);
+  background-image: -o-linear-gradient(top, #555555, #555555);
+  background-image: linear-gradient(top, #555555, #555555);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#555555', GradientType=0);
+}
+.m-btn.black:hover, 
+.m-btn.black:focus, 
+.m-btn.black:active, 
+.m-btn.black.active, 
+.m-btn.black.disabled,
+.m-btn.black[disabled] { 
+  background-color: #222222;
+  background-image: -moz-linear-gradient(top, #222222, #222222);
+  background-image: -ms-linear-gradient(top, #222222, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#222222));
+  background-image: -webkit-linear-gradient(top, #222222, #222222);
+  background-image: -o-linear-gradient(top, #222222, #222222);
+  background-image: linear-gradient(top, #222222, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222222', endColorstr='#222222', GradientType=0);
+}
+
+.m-btn.black:active,
+.m-btn.black.active
+{
+  background-color: #222222;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -ms-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(top, #444444, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#222222', GradientType=0);
+
+}
 /*  Mini-button */
 .sm {
   font-size: 11px;
 }
-.mini {
+.mini 
+{
   height: 13px;
   font-size: 11px;  
   line-height: 13px;
   padding: 4px 10px;
 }
-.big{
+.big
+{
 	height: 38px;
 	font-size: 18px; 
 	line-height: 38px; 	
 	padding: 20px 26px;
+}
+
+.rnd
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.big.rnd
+{
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
 }
 
 /*  Disabled */
@@ -606,17 +631,29 @@ textarea {
 .m-btn.caret:hover {
   opacity: 1;
 }
+
 .m-btn-group .m-btn {
   position: relative;
   float: left;
-  margin-left: -1px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  margin-left: -1px; 
 }
+
 .m-btn-group .m-btn:first-child {
   margin-left: 0;
 }
+
+.m-btn-group .m-btn.rnd:first-child {
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.m-btn-group .m-btn.rnd.dropdown-carettoggle {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+
 /* BUTTON CONTAINER */
 /* For mixing buttons and button groups, e.g., in a navigation bar */
 .m-btn-strip .m-btn, .m-btn-strip .m-btn-group {
