@@ -1,9 +1,9 @@
 <h1>Overview</h1>
 Formerly known as CSS3 Microsoft-Metro Buttons (CMMB)
 
-Inspired by Microsoft's Metro Design Language, I was in need of a metro-styled CSS3 button library. I wanted to make similar metro-looking buttons used by Microsoft (extensively used in their Microsoft Windows Azure website) So I've built a very small, simple and clean CSS3 library to deal with my problem.
+Inspired by Microsoft's Modern Design Language, I was in need of a metro-styled CSS3 button library. I wanted to make similar metro-looking buttons used by Microsoft (extensively used in their Microsoft Windows Azure website) So I've built a very small, simple and clean CSS3 library to deal with my problem.
 
-Thus CSS3 Microsoft-Metro Buttons (CMMB) was born. Weighing in at a healthy 30KB (compressed, 5KB gzipped), it's a light-weight and easy-to-use CSS/JS library that uses CSS3 styles for rich button design. The library can also work with Twitter Bootstrap. The buttons are also cross-browser compatibile from IE8, to the latest version of Chrome, and Firefox so you don't have to spend countless minutes testing on different browsers.
+Thus CSS3 Microsoft-Modern Buttons was born. Weighing in at a healthy 33KB (compressed, 5.5KB gzipped), it's a light-weight and easy-to-use CSS/JS library that uses CSS3 styles for button design. The library can also work with Twitter Bootstrap. The buttons are also cross-browser compatibile from IE8, to the latest version of Chrome, and Firefox so you don't have to spend countless minutes testing on different browsers.
 
 My goal is to help developers out there shave off some wasted time building that metro-like stylesheet by providing them a library, a starter kit, a base on which they can build upon.
 

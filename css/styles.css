@@ -174,7 +174,7 @@ section h4
 
 .marketing .container
 {
-    width: 960px;
+    width: 980px;
 }
 
 .marketing h3 
@@ -251,6 +251,15 @@ section h4
 
 /* Desktop
 ------------------------- */
+
+@media (min-width: 1200px)
+{    
+    .marketing .container
+    {
+        width: 1200px;
+    }
+}
+
 @media (max-width: 980px) {
   /* Unfloat brand */
   body > .navbar-fixed-top .brand {
@@ -258,8 +267,10 @@ section h4
     margin-left: 0;
     padding-left: 10px;
     padding-right: 10px;
-  }
+  }    
+   
 }
+
 
 /* Tablet to desktop
 ------------------------- */

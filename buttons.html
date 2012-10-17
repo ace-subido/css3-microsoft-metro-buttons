@@ -13,8 +13,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
-    <link href="./css/m-styles.min.css" rel="stylesheet"> 
-
+    <link href="./css/m-styles.min.css" rel="stylesheet">    
     <link href="./js/google-code-prettify/prettify.css" rel="stylesheet">  
     <link rel="shortcut icon" href=".css/ico/favicon.ico">  
 
@@ -92,15 +91,32 @@
         		<h3>Colored Buttons</h3>
                 <p>
                   To get some color to your buttons, you can do this by adding the 
-                  <code>blue</code>, <code>red</code>, <code>purple</code> or <code>green</code> class to your button.
+                  <code>blue</code>, <code>red</code>, <code>purple</code>, <code>black</code> or <code>green</code> class to your button.
                 </p>
                 <div class="example">                    
                     <a href="#button" class="m-btn blue">Color Blue</a>
                     <a href="#button" class="m-btn red">Color Red</a>            
                     <a href="#button" class="m-btn purple">Color Purple</a>
                     <a href="#button" class="m-btn green">Color Green</a>
+                    <a href="#button" class="m-btn black">Color Black</a>
                 </div>
                 <pre class="prettyprint"><code>&lt;a href="#" class="m-btn red">Color Red&lt;/a></code></pre>                
+    		</section>
+
+            <section>
+        		<h3>Rounded Buttons</h3>
+                <p>
+                  Add the <code>rnd</code> class to create rounded-buttons. Like those buttons Microsoft uses on the
+                  Microsoft Surface website.
+                </p>
+                <div class="example">                    
+                    <a href="#button" class="m-btn blue rnd">Color Blue</a>
+                    <a href="#button" class="m-btn red rnd">Color Red</a>            
+                    <a href="#button" class="m-btn purple rnd">Color Purple</a>
+                    <a href="#button" class="m-btn green rnd">Color Green</a>
+                    <a href="#button" class="m-btn black rnd">Color Black</a>
+                </div>
+                <pre class="prettyprint"><code>&lt;a href="#" class="m-btn red rnd">Color Red&lt;/a></code></pre>                
     		</section>
     
             <section>    	
@@ -132,6 +148,8 @@
 		            <a href="#button" class="m-btn" disabled>Preview</a>
         		 	<a href="#button" class="m-btn red disabled">Delete</i></a>
 		            <a href="#button" class="m-btn red" disabled>Delete</i></a>
+                    <a href="#button" class="m-btn black" disabled>Delete</i></a>
+
         	    </div>
         		    <pre class="prettyprint"><code>&lt;a href="#" class="m-btn disabled">Preview&lt;/a>
 &lt;a href="#" class="m-btn" disabled>Preview&lt;/a>
@@ -320,21 +338,16 @@
 					<pre class="prettyprint"><code>&lt;div class="m-btn-group">
     &lt;a href="#" class="m-btn icn-only">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
     &lt;a href="#" class="m-btn icn-only">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
-&lt;div></code></pre>
-                    
-        
+&lt;div></code></pre>      
                 <p>To create large icon buttons using the big swap arrows that was provided, just use the <code>bigicn-only</code> 
-                CSS class.</p>
-        
+                CSS class.</p>        
         		<div class="example">
                 	<a class="m-btn bigicn-only"><i class="m-icon-big-swapright"></i></a>
        	            <a class="m-btn bigicn-only green"><i class="m-icon-big-swapright m-icon-white"></i></a>           
         		</div>
 					<pre class="prettyprint"><code>&lt;a href="#" class="m-btn bigicn-only">&lt;i class="m-icon-big-swapright">&lt;/i>&lt;/a>
-&lt;a href="#" class="m-btn bigicn-only green">&lt;i class="m-icon-big-swapright icon-white">&lt;/i>&lt;/a></code></pre>
-	                
-		    </section>   
-    
+&lt;a href="#" class="m-btn bigicn-only green">&lt;i class="m-icon-big-swapright icon-white">&lt;/i>&lt;/a></code></pre>	                
+		    </section>
    			<section>
                 <h3>Buttons with both text and icon</h3>
                 <p>
@@ -449,7 +462,21 @@
                         <span class="caret white"></span>
                       </a>
                       <ul class="m-dropdown-menu">
-                          <li><a href="#"><i class="icon-user"></i> Edit Profile</a></li>
+                          <li><a href="#"><i class="icon-briefcase"></i> Edit Profile</a></li>
+                          <li><a href="#"><i class="icon-th-list"></i> View Profile</a></li>
+                          <li><a href="#"><i class="icon-question-sign"></i> Help</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#"><i class="icon-off"></i> Logout</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="m-btn-group">
+                      <a class="m-btn blue rnd"><i class="icon-cog icon-white"></i> Rounded Settings</a>
+                      <a class="m-btn blue rnd dropdown-carettoggle" data-toggle="dropdown" href="#">
+                        <span class="caret white"></span>
+                      </a>
+                      <ul class="m-dropdown-menu">
+                          <li><a href="#"><i class="icon-briefcase"></i> Edit Profile</a></li>
                           <li><a href="#"><i class="icon-th-list"></i> View Profile</a></li>
                           <li><a href="#"><i class="icon-question-sign"></i> Help</a></li>
                           <li class="divider"></li>
@@ -460,6 +487,19 @@
                     <pre class="prettyprint" style=""><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn-group"</span><span class="tag">&gt;</span><span class="pln">
   </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn blue"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cog icon-white"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Settings</span><span class="tag">&lt;/a&gt;</span><span class="pln">
   </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn blue dropdown-carrettoggle"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret white"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+  </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-dropdown-menu"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-user"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Edit Profile</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-th-list"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> View Profile</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-question-sign"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Help</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-off"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Logout</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn-group"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn blue rnd"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cog icon-white"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Rounded Settings</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-btn blue rnd dropdown-carrettoggle"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">
     </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret white"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
   </span><span class="tag">&lt;/a&gt;</span><span class="pln">
   </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"m-dropdown-menu"</span><span class="tag">&gt;</span><span class="pln">
