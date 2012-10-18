@@ -4,7 +4,7 @@
  * I do not claim ownership on the origin of design and icons.
  * Built by Ace Subido (http://github.com/ace-subido)
  */
-[class^="icon-"] {
+.m-btn [class^="icon-"] {
   display: inline-block;
 
   width: 14px;
@@ -14,14 +14,14 @@
   
   vertical-align: top;
   background-image: url(../img/glyphicons-halflings.png);
-  background-position: 14px 14px;
+  
   background-repeat: no-repeat;
 
 }
-[class^="icon-"]:last-child {
+.m-btn[class^="icon-"]:last-child {
   *margin-left: 0;
 }
-.icon-white {
+.m-btn .icon-white {
   background-image: url(../img/glyphicons-halflings-white.png);
 }
 .disabled > [class^="icon-"], [disabled] > [class^="icon-"]{
