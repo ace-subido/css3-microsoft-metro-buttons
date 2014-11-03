@@ -1,0 +1,385 @@
+
+body {
+  position: relative;
+  padding-top: 40px;
+}
+
+body,
+p
+{
+  font: 15px Segoe UI, Helvetica, Arial, sans-serif;
+  line-height: 24px;
+}
+
+pre,
+code
+{
+    color: #333333;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	text-shadow: #ffffff 0 1px 0;	
+}
+
+/* Code in headings */
+h3 code {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* padding for in-page bookmarks and fixed navbar */
+section {
+  padding-top: 30px;
+}
+section > .page-header,
+section > .lead {
+  color: #5a5a5a;
+}
+section > ul li {
+  margin-bottom: 5px;
+}
+
+/* Faded out hr */
+hr.soften {
+  height: 1px;
+  margin: 70px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}
+
+.navbar-inverse .navbar-inner
+{
+	background-color: #222222;
+	border-color: #333333;
+	background-image: none;
+}
+.navbar .nav li
+{
+	line-height: 24px;
+}
+.navbar .nav li a:hover
+{
+	background-color: #111111;
+}
+
+
+/* Base class
+------------------------- */
+.header 
+{  
+	width: 100%; 
+	margin: auto; 
+	padding-top: 20px; 
+	background: url("../img/starrynight.png"); 
+	background-color: black; 
+	opacity: 2;
+}
+.titleheader 
+{
+	width: 100%;  
+	margin: auto; 
+	padding-bottom: 20px; 
+	padding-top: 90px;}
+
+.titleheader h1, 
+.titleheader h3
+{			
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 1), 0 0 1px rgba(0, 0, 0, 1);
+	width: 960px;
+	display: inline;	
+	color: #efefef;
+	padding: 4px;
+	background-color: #222222;	
+}	
+.titleheader h1,
+.marketing h1
+{
+	font: 36px/58px Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+section h2
+{
+	font: 30px/49px Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.titleheader h3,
+.marketing h3,
+section h3
+{
+	font: 24px/36px Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+section h4
+{
+	font: 18px/29px	Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.titleheader a
+{
+	color:	#dddddd;
+}
+
+.titleheader a:hover
+{
+	color:	white;
+}
+
+.row + .row
+{
+	margin-top: 30px;
+}
+
+/* Social proof buttons from GitHub & Twitter */
+.docs-social {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #eeeeee;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Quick links on Home */
+.docs-social-buttons {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.docs-social-buttons li {
+    display: inline-block;
+    padding: 5px 8px;
+    line-height: 1;
+    *display: inline;
+    *zoom: 1;
+}
+
+.spotlight-action
+{
+    text-align: center;
+	padding: 40px 0px;
+}
+.spotlight-action .version
+{
+	color: #aaaaaa;
+	font: 14px/23px Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.marketing
+{
+    text-align: center;
+}
+
+.marketing .container
+{
+    width: 980px;
+}
+
+.marketing h3 
+{   
+    color: #444444;    
+}
+
+.marketing h1
+{
+    color: #666666;  
+}
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+  padding-bottom: 70px; 
+}
+.footer p {  	
+  margin-bottom: 0;
+  color: #777;
+}
+
+
+/* Base class */
+.example {
+  position: relative;
+  margin: 15px 0;
+  padding: 49px 19px 14px;
+  *padding-top: 24px;
+  background-color: #fff;
+  border: 1px solid #ddd;  
+}
+
+/* Echo out a label for the example */
+.example:after {
+  content: "Example";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4; 
+}
+
+/* Remove spacing between an example and it's code */
+.example + .prettyprint {
+  margin-top: -20px;
+  padding-top: 15px;
+}
+
+/* Tweak examples
+------------------------- */
+.example > p:last-child {
+  margin-bottom: 0;
+}
+.example .table,
+.example .progress,
+.example .well,
+.example .alert,
+.example .hero-unit,
+.example .pagination,
+.example .navbar,
+.example > .nav,
+.example blockquote {
+  margin-bottom: 5px;
+}
+.example .pagination {
+  margin-top: 0;
+}
+
+/* Desktop
+------------------------- */
+
+@media (min-width: 1200px)
+{    
+    .marketing .container
+    {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 980px) {
+  /* Unfloat brand */
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }    
+   
+}
+
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  .marketing .container
+  {
+      width: 744px;
+  }
+  .header
+  {
+      margin-top: -20px;
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  .marketing .container
+  {
+      width: auto;
+  }
+  .header
+  {	
+	padding: 40px 20px;
+	margin-top: -20px;
+	margin-left: -20px;
+	margin-right: -20px;
+  }
+  .docs-social
+  {
+	  margin: 0 -20px;
+  } 
+  
+  /* Unfloat the back to top link in footer */
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer p {
+    margin-bottom: 9px;
+  }
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0;
+  }
+  .marketing .container
+  {
+      width: auto;
+  }
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+  
+  .m-btn.big
+  {
+      display: block !important;
+  }
+  
+  
+
+  /* center example sites */
+  .example-sites {
+    margin-left: 0;
+  }
+  .example-sites > li {
+    float: none;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto 18px;
+    text-align: center;
+  }
+  .example-sites .thumbnail > img {
+    max-width: 270px;
+  }
+
+  /* Do our best to make tables work in narrow viewports */
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Modal example */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  /* Unfloat the back to top in footer to prevent odd text wrapping */
+  .footer .pull-right {
+    float: none;
+  }
+}
