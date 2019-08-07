@@ -1,5 +1,5 @@
 <h1>Update (2019)</h1>
-<h4>No longer maintaiend</h4>
+<h3>Library No longer maintained</h3>
 I made this library around 7 years ago, right now there's an official Microsoft Fluent design CSS library made by microsoft. I highly recommend that you use that instead:
 
 https://www.microsoft.com/design/fluent/#/web
