@@ -1,3 +1,8 @@
+<h1>Update (2019)</h1>
+I made this library around 7 years ago, right now there's an official Microsoft Fluent design CSS library made by microsoft. I highly recommend that you use that instead:
+
+https://www.microsoft.com/design/fluent/#/web
+
 <h1>Overview</h1>
 Formerly known as CSS3 Microsoft-Metro Buttons (CMMB)
 
