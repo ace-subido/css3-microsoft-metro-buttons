@@ -1,6 +1,6 @@
-<h1>Update (2019)</h1>
-<h3>Library No longer maintained</h3>
-I made this library around 7 years ago, right now there's an official Microsoft Fluent design CSS library made by microsoft. I highly recommend that you use that instead:
+<h1>DEPRECATED</h1>
+<h3>Repo no longer maintained</h3>
+I made this library around 7 years ago, and there weren't a lot of options back then. It's 2019, and there's a lot of other options out there, but most importantly an official Microsoft Fluent design CSS library made by Microsoft. I highly recommend that you use that instead:
 
 https://www.microsoft.com/design/fluent/#/web
 
